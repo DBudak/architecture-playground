@@ -1,0 +1,13 @@
+Event processor A (1)-> Queue (2)-> Event Processor B (3)-> DB
+
+1. Message never reaches queue
+Solution: Persistence message queue + synchronous send = guaranteed delivery.
+Save event in db, Event processor A is blocked until queue acknowledged event received
+
+2. B read the event but crashed before processing it
+Solution: Client acknowledgment mode. Keep events in queue, attach Cid (client ID). Keep it unique to processor
+Arch Foundation book p 202 for detail
+
+3. B unable to presist data
+Solution: leverage ACID db transaction via db commit.
+Last participant support - remove only after acknowledgment of persistence

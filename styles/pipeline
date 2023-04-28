@@ -1,0 +1,13 @@
+Data flows through Pipes from one Filter to another
+Functional Programming on a large scale
+Uni directional data flow
+
+Good:
+   Low cost
+   High Simplicity
+   Decent in most arch ilities
+Bad:
+    Limited usability
+    No scalability
+    No fault tolerance
+    No elasticity

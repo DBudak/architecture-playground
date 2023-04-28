@@ -1,0 +1,27 @@
+MVC
+This is where you end up with no architect
+Evolves into Big Ball of Mud
+Favors Technical Partitioning
+
+Layers:
+    Presentation
+    Business rules
+    Service
+    Persistence
+    Database
+
+Good:
+    Cheap
+    Devs know it
+    Easy RBAC
+Bad:
+    Not scalable
+    Not testable
+    No fault tolerance
+    No modularity
+    No deployability
+
+Anti pattern:
+    Architecture sinkhole - too many pass-through requests in a layered monolith
+
+Start with this if need fast and cheap. Switch to something else if grows.

@@ -1,0 +1,16 @@
+Fallacies of distributed systems:
+
+1. Network is reliable
+2. Latency is zero
+3. Bandwidth is infinite
+4. Network is secure
+5. Transport cost is zero
+6. Network is homogeneous (runs on same hardware/vendor)
+7. Network topology never changes
+8. There is only one network administrator
+
+Drawbacks of distributed systems:
+
+Logging is harder
+Eventual consistency is hard and required
+Contract maintenance and versioning is required

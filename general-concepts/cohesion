@@ -1,0 +1,10 @@
+Cohesion defines to what extent the parts of the module should be in the module
+
+From good to bad:
+    Functional cohesion - essential to function
+    Sequential cohesion - output becomes input
+    Communicational cohesion - contribute to the same output
+    Procedural cohesion - order of execution
+    Temporal cohesion - timing dependency
+    Logical cohesion - util files
+    Coincidental cohesion - not related but coupled

@@ -1,0 +1,5 @@
+Architecture quantum - independently deployable artifact with high functional cohesion and synchronous connascence
+
+    Includes all necessary components to function
+    Does something meaningful. Implements bounded context (single workflow)
+    Synchronous connascence. Sync calls between entities in quantum

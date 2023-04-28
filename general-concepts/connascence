@@ -1,0 +1,14 @@
+Two components are connascent if a change in one requires the other to be modified
+
+Static connascence - source code level coupling
+    Connascence of name - components must agree on the name of the entity
+    Connascence of type - e.g. true = 1
+    Connascence of meaning
+    Connascence of position - order of values
+    Connascence of algorithm - e.g. agree on security hashing algo
+
+Dynamic connascence - runtime level coupling
+    of Execution
+    of Timing
+    of Values
+    of Identity

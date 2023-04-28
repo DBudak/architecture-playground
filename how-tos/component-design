@@ -1,0 +1,10 @@
+Actor/actions - good for significant portions of upfront design
+
+Event storming - DDD, microservices, messages. build components around events
+
+Workflow - build components around workflows
+
+Component Identification flow:
+
+Identify initial components -> Assign requirements to components -> (3)Analyze roles and responsibilities ->
+-> Analyze architectural characteristics -> Restructure components -> Goto (3)

@@ -1,0 +1,60 @@
+Request-based model
+client sends a request to request orchestrator (UI) which passes the request to request processor
+
+Topologies
+Comes down to control of Workflow and error handling vs high performance and scalability
+    Broker topology
+        No central event mediator
+        Event bounces from processor to processor
+        RabbitMQ, HornetQ
+
+        Good:
+            Decoupled
+            High scalability
+            High responsiveness
+            High performance
+            High fault tolerance
+        Bad:
+            No workflow control
+            Weak Error handling
+            No recoverability
+            No restart capabilities
+            Data inconsistencies
+    Mediator topology
+        Has central event mediator managing event flows and lifecycle
+
+        Good:
+            Workflow control
+            Error handling
+            Recoverabilioty
+            Restart capabilities
+            Data consistency
+        Bad:
+            Coupling of event processors
+            Lower scalability
+            Lower performance
+            Lower fault tolerance
+            Complexity
+
+Workflow event pattern
+    Addresses error handling issues with async systems
+    When an error happens event consumer delegates the error to workflow processor and moves to next event
+    Workflow processor attempts to fix the error and posts new event on success
+    If can't fix raise alert
+    Errors are processed out of order
+
+Event Driven vs Request Driven
+    Advantages of event driven:
+        Better response to dynamic user content
+        Scalability and elasticity
+        Aggility and change management
+        Adaptability and extensibility
+        Responsiveness and performance
+    Tradeoffs:
+        Only supports eventual consistency
+        Less control over flow
+        Less certainty of the outcome
+        Difficult to test and debug
+        Complexity
+
+p. 202 204 196

@@ -1,0 +1,13 @@
+Divides the system into Core and Plugins
+Core is minimal functionality to run the system
+Core can be layered or domain specific monolith
+Core system can maintain a registry of plugins
+Plugins are standalone, independent components that enhance or add qualities to the core system
+
+Good:
+    Low cost
+    Decent in most ilities
+Bad:
+    No Fault Tolerance
+    No Scalability
+    No Elasticity

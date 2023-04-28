@@ -1,0 +1,4 @@
+Relies on complex, hopefully 3rd party, in-memory duplicated cache that syncs with DB.
+DB scaling is the usual bottleneck, solves that.
+Perfect for high elasticity (scale upo/down) liek ticket services
+High cost and complexity

@@ -1,0 +1,27 @@
+General ilities
+
+Auditability
+Performance
+Security
+Requirements
+Data
+Legality
+Scalability
+
+Operational ilities
+
+Availability
+Continuity
+Performance
+Recoverability
+Safety
+Robustness
+Scalability
+
+Structural ilities
+
+Configurability
+Extensibility
+
+
+Focus only on critical, non-domain design aspects. Don't try to focus on all ilities.
