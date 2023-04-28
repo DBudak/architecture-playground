@@ -5,3 +5,5 @@ Each service can have its own UI, share UI or have no UI
 Up to 12 coarse-grained services
 Uses REST and DB partitioning
 Use after layered monolith, until the scaling and elasticity become a problem
+
+Services folow the same principle as microservices but rely on single database

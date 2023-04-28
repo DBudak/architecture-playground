@@ -1,0 +1,10 @@
+Pattern Name - communication type - consistency - coordination - coupling
+
+Epic Saga -             synchronous -   atomic -    orchestrated -  very high
+Phone Tag Saga -        synchronous -   atomic -    choreographed - high
+Fairy Tale Saga -       synchronous -   eventual -  orchestrated -  high
+Time Travel Saga -      synchronous -   eventual -  choreographed - medium
+Fantasy Fiction Saga -  asynchronous -  atomic -    orchestrated -  high
+Horror Story -          asynchronous -  atomic -    choreographed - medium
+Parallel Saga -         asynchronous -  eventual -  orchestrated -  low
+Anthology Saga -        asynchronous -  eventual -  choreographed - very low

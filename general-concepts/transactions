@@ -1,0 +1,4 @@
+Consistency refers to the strictness of transactional integrity that calls must adhere to:
+
+    Atomic transactions (all-or-nothing) require consistency during the process of request
+    Eventual consistency - the opposite of atomic transactions
