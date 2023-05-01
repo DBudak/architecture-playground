@@ -1,0 +1,32 @@
+Tactical Forking - copy everything and start deleting
+    Pros
+        Teams can start working right away with no up-front analysis
+        Devs find it easier to delete code rather than extract it
+    Cons
+        Result will likely still contain a lot of latent code left from the monolith
+        Code won't be less chaotic unless refactored, there will be just less of it
+        Inconsistencies in naming shared files and components
+
+Identify and Size Components Pattern -typically the first approach
+    Useful metric for component sizing - calculate number of statements (ends with ;)
+    When resizing a large component - use functional decomposition or domain-driven approaches to identify subdomains
+    Implement fitness functions via COTS software, p 87
+
+Gather Common Domain Components Pattern - used to consolidate common business domain that might be duplicated
+    Sign that Common DOmain Components exist is the use of shared classes or a common inheritance structure
+    Can be automated via a fitness function  to locate common names within the namespace of a component
+
+Flatten Components Pattern - used to collapse or expand domains, subdomains and components, ensuring source code files
+reside only within well-defined componentsб з108 ащк учфьзду
+    When the namespace of a component gets extended (another node is added to directory structure usually), the prior
+    namespace is no longer a component, but a subdomain
+    Component is the last thing in the inheritance tree, not first
+
+Determine component Dependencies Pattern - identify and refine dependencies, determine feasibility for a migration
+    Analyze incoming and outgoing dependencies to determine resulting service dependency graph
+    Component dependency is formed when a class from one component interacts with the class fro mthe other one
+    Component coupling is one of the most important factors in determining feasibility of migration
+
+Create Components Domains Pattern - group and refactor components to align with particular domain
+
+Create Domain Services Pattern - physically breaking monolith apart

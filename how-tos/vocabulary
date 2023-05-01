@@ -1,0 +1,7 @@
+Primary business driver for breaking apps into smaller parts is time-to-market
+
+Key business architectural characteristics: time-to-market, agility, fault tolerance, scalability, deployability, testability, maintainability
+
+Component-based decomposition - migration to microservices
+
+COTS - commercial off the shelf, software bought and used "as is"
