@@ -1,0 +1,38 @@
+General
+    Service owning a database means Service directly writing into it
+
+Data Disintegrators p133
+    Provide answers and justifications for the question "when should i break apart my data"
+
+    Change control
+        How many services are impacted by a database table change
+
+    Connection Management
+        Can the db handle the connections needed for distributed services?
+        How often conenction waits occur?
+
+    Scalability
+        Can the db scale to meet the demand?
+
+    Fault tolerance
+        How many services are impacted by crash or maintenance
+
+    Architectural quanta
+        Is a single data base forcing me into an undesirable single architecture quantum?
+
+    Database type optimization
+        Can I optimize my data by using different database types?
+
+Data integrators p147
+    Data relationships
+        Are there foreign keys, triggers, or views that form close relationships between tables
+
+    Database transactions
+        Is a single transactional unit of work necessary to ensure data integrity and consistency?
+
+Decomposing monolithic data, 5-step process p151
+    1. Analyze dattabase and create data domains
+    2. Assign tables to data domains, move tables
+    3. Separate database connections to data domains
+    4. Move schemas to separate database servers
+    5. Switch over to independent database servers

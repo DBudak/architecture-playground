@@ -1,0 +1,10 @@
+p165
+Similar to hash table data structures
+Something like table in RDBMS with id and blob columns
+blob stores any kind of data
+Also known as NoSQL
+Only supports get, put, delete, no joins, where, order by
+
+Persistent examples: Amazon DynamoDB, Riak KV
+Non-persistent examples: MemcacheDB
+Configurable persistence: Redis

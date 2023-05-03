@@ -1,0 +1,10 @@
+p169
+Also known as wide column or big table databases
+Have rows with varying number of columns
+Each column is name-value pair
+Has column-key, column-value, row key
+NoSQL
+
+Ideal for high write volume scenarios
+
+Cassandra, Scylla

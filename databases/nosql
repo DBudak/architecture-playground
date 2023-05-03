@@ -1,0 +1,5 @@
+NoSQL databases are schema-less. In theory.
+In practice it just means applications have to deal with N schemas.
+It is a powerful concept but it is important to understand that schema is always there, sometimes implicitly defined by data
+
+Has tunable consistency - based on needs each operatio ncan decide how much consistency it needs.

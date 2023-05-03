@@ -1,0 +1,19 @@
+Partitioning is the database process where very large tables are divided into multiple smaller parts.
+    Vertical table partitioning is mostly used to increase SQL Server performance especially in cases where a query
+    retrieves all columns from a table that contains a number of very wide text or BLOB columns.
+    Horizontal partitioning is sharding
+
+Sharding is a type of database partitioning, more specifically, Horizontal Partitioning.
+Sharding, is replicating the schema, and then dividing the data based on a shard key onto a separate
+database server instance, to spread load.
+Every distributed table has exactly one shard key. A shard key can contain any number of columns.
+
+Sharding should be used only when all other options for optimization are inadequate.
+The introduced complexity of database sharding causes the following potential problems:
+
+SQL complexity - Increased bugs because the developers have to write more complicated SQL to handle sharding logic
+Additional software - that partitions, balances, coordinates, and ensures integrity can fail
+Single point of failure - Corruption of one shard due to network/hardware/systems problems causes failure of the entire table.
+Fail-over server complexity - Fail-over servers must have copies of the fleets of database shards.
+Backups complexity - Database backups of the individual shards must be coordinated with the backups of the other shards.
+Operational complexity - Adding/removing indexes, adding/deleting columns, modifying the schema becomes much more difficult.
