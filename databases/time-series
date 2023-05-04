@@ -1,0 +1,6 @@
+Optimized for storing sequences of data points connected through a time window
+Used for self-driving cars, microservices, IoT p 177
+
+Are based on PostgreSQL
+
+InfluxDB

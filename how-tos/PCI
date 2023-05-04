@@ -1,0 +1,44 @@
+https://www.pcicomplianceguide.org/faq/
+
+https://www.pcisecuritystandards.org/document_library/
+
+Q15: What are the penalties for non-compliance?
+A: The payment brands may, at their discretion, fine an acquiring bank $5,000 to $100,000 per month for PCI compliance
+violations. The banks will most likely pass this fine along until it eventually hits the merchant. Furthermore,
+the bank will also most likely either terminate your relationship or increase transaction fees.
+Penalties are not openly discussed nor widely publicized, but they can be catastrophic to a small business. It is
+important to be familiar with your merchant account agreement, which should outline your exposure.
+
+Q16: What is defined as ‘cardholder data’?
+A: The PCI Security Standards Council (SSC) defines ‘cardholder data’ as the full Primary Account Number (PAN) or the
+full PAN along with any of the following elements:
+
+Cardholder name
+Expiration date
+Service code
+Sensitive Authentication Data, which must also be protected, includes full magnetic stripe data, CAV2, CVC2, CVV2,
+CID, PINs, PIN blocks and more.
+
+Q17: What is the definition of ‘merchant’?
+A: For the purposes of the PCI DSS, a merchant is defined as any entity that accepts payment cards bearing the logos of
+any of the five members of PCI SSC (American Express, Discover, JCB, MasterCard or Visa) as payment for goods and/or
+services.
+
+Q18: What constitutes a Service Provider?
+A: The PCI SSC defines a Service Provider this way:
+“Business entity that is not a payment brand, directly involved in the processing, storage, or transmission of
+cardholder data. This also includes companies that provide services that control or could impact the security of
+cardholder data.” (Source: www.pcisecuritystandards.org)
+
+Q26: What if my business refuses to cooperate?
+A: PCI is not, in itself, a law. The standard was created by the major card brands Visa, MasterCard, Discover,
+AMEX and JCB. At their acquirers’/service providers’ discretion, merchants that do not comply with PCI DSS may be
+subject to fines, card replacement costs, costly forensic audits, brand damage, etc., should a breach event occur.
+
+Q29: Do states have laws requiring data breach notifications to the affected parties?
+A: Absolutely. California is the catalyst for reporting data breaches to affected parties. The state implemented its
+breach notification law in 2003, and now nearly every state has a similar law in place.
+
+As of April 12, 2017, NCSL.org reports: Forty-eight states, the District of Columbia, Guam, Puerto Rico and the
+Virgin Islands have enacted legislation requiring private, governmental or educational entities to notify individuals
+of security breaches of information involving personally identifiable information.

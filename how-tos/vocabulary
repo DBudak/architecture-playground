@@ -23,3 +23,12 @@ event of system failure.
 
 All of the above are a given in RDBMS
 ACID transactions ensure the highest possible data reliability and integrity.
+
+Modularity - breaking up systems into different parts
+
+Granularity - deals with the size of those separate parts
+
+SAQ - Self-assesment qustionnaire
+
+PA-DSS - Payment Application Data Security Standard maintained by the PCI Security Standards Council (SSC) to address
+the critical issue of payment application security

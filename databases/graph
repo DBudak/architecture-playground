@@ -1,0 +1,9 @@
+In relational databases relations implied by references p171
+In graph we use nodes to store entities and their properties
+Nodes are connected with edges (relationships) which are explicit objects
+
+(Node)TicketID:123 -> (Edge)TICKET_CREATED -> (Node)Customer:John Doe
+
+Many solutions support ACID
+
+Neo4j ArangoDB
