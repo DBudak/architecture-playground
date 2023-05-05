@@ -1,0 +1,5 @@
+Table Split
+    Breaks one table into multiple so that each service owns data its responsible for
+    Pros
+        Preserves bounded context
+        Single data ownership

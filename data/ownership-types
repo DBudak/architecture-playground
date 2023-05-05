@@ -1,0 +1,8 @@
+Single Ownership
+    Only one service writes to table
+
+Common Ownership
+    Most or all of the services write to table
+
+Joint Ownership
+    Couple services write to the table

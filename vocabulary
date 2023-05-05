@@ -32,3 +32,21 @@ SAQ - Self-assesment qustionnaire
 
 PA-DSS - Payment Application Data Security Standard maintained by the PCI Security Standards Council (SSC) to address
 the critical issue of payment application security
+
+East west communication - interservice, between services
+
+North south communication - communication with external world
+
+Attempting to divide a cohesive module would only result in increased coupling and decreased readability
+
+WET - Opposite of DRY, Write everything twice
+
+A heterogeneous system is one that is made up of software that could be written in different languages, running on
+different operating systems, perhaps use different standards for communication.
+
+gRPC is a modern open source high performance Remote Procedure Call (RPC) framework that can run in any environment.
+It can efficiently connect services in and across data centers with pluggable support for load balancing, tracing,
+health checking and authentication. It is also applicable in last mile of distributed computing to connect devices,
+mobile applications and browsers to backend services.
+
+Orthogonal coupling - two distinct purposes that must intersect to form a complete function

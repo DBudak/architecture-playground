@@ -1,19 +1,19 @@
 Granularity Disintegrators provide guidance and justification for when to break a service into smaller parts
 
-Service scope and function
+Service scope and function - single purpose services with tight cohesion
     Is the service doing too many unrelated things
 
-Code volatility
+Code volatility - Agility, ease of testing and deploying
     Rate at which code changes. Do different parts change differently?
 
-Scalability and throughput
+Scalability and throughput - Lower cost and faster responsiveness
     Do parts of service need to scale differently?
 
-Fault tolerance
+Fault tolerance - Better uptime
     Are there errors that cause critical functions to fail within service
 
-Security
+Security - Better access control to certain areas
     Do some parts of the service need higher security levels than others?
 
-Extensibility
+Extensibility - Agility, ease of adding new features
     Is the service always expanding to add new customers?

@@ -1,0 +1,8 @@
+Provide guidance for putting services back together or not breaking them apart
+
+Database transactions -Data integrity and consistency
+    Is ACID required between services?
+
+Workflow and choreography - Fault tolerance, performance, reliability
+    Do services need to talk to each other a lot? Can data be broken apart? Do services need to share code?
+

@@ -1,0 +1,52 @@
+Code replication
+    Pros
+        Preserves bounded context
+        No code sharing
+    Cons
+        Difficult to apply code changes
+        Code inconsistencies aross services
+        No versioning capabilities
+    When to use
+        Good approach for simple static code, common utilities that is unlikely to ever change
+
+Shared Library
+    Avoid large coarse grained libraries
+    Pros
+        Versioning
+        Shared code is compile-based
+        Good agility
+    Cons
+        Dependencies can be difficult to manage
+        Code duplication in heterogeneous codebases
+        Version deprecation can be difficult
+        Version communication can be difficult
+    When to use
+        Good in homogenous environments where shared code change is low to moderate
+
+Shared Service
+    Pros
+        Good for high volatility code
+        Good for heterogenous codebases
+        Preserves bounded context
+        No static code sharing
+    Cons
+        Versioning can be difficult
+        Performance is impacted, network latency
+        Fault tolerance and availability issues due to service dependency
+        Scalability and throughput issues due to service dependency
+        Increased risk due to runtime changes
+    When to use
+        Highly polyglot environments where shared functionality needs to change often
+
+Sidecars and Service Mesh
+    Solves orthogonal coupling (see vocabulary)
+    Pros
+        Offers a consistent way to isolate coupling
+        Allows consistent infrastructure coordination
+        Ownership per team or centralized is possible
+    Cons
+        Must implement a sidecar per platform
+        Sidecar may grow large/complex
+    When to use
+        Clean way to spread some of the cross cutting concerns across a distributed architecture. Architectural
+        equivalent of Decorator design pattern
