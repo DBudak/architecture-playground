@@ -1,0 +1,8 @@
+In chemistry base substance is the opposite of acid substance, hence the name
+
+BA (basic availability) - all of the services are expected to be available and participate in the transaction
+
+S (soft state) - describes the state where a transaction is in progress and the state of the atomic business request is
+not yet finalized
+
+E (eventual consistency) - means that given enough time all parts of transaction will complete succesfully.

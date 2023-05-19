@@ -1,0 +1,39 @@
+Distributed architectures rely heavily on eventual consistency as a tradeoff for better operational architecture
+characteristics such as performance, scalability, elasticity, fault tolerance and availability.
+
+Three main patterns of eventual consistency:
+
+Background synchronization pattern
+    Uses a separate external service or process to periodically check data sources and keep them in sync
+    Time to consistency varies and depends on sync job being a batch process or a service that operates every N times
+    Usually the longest time to consistency
+    Not suitable for microservices
+    Pros
+        Service decoupling
+        Good for overall responsiveness
+    Cons
+        Couples data and breaks bounded contexts between data and services
+
+Orchestrated request-based pattern
+    Synchronizes during the course of the business request (while the user is waiting)
+    Orchestrator manages transaction as a separate entity
+    Requires human intervention if the compensating transaction has failed
+    Pros
+        Service decoupling
+        Decent data consistency time
+        Atomic business request
+    Cons
+        Favors data consistency over responsiveness
+        Complex error handling
+        Involves compensating transactions which are complex
+
+Event-based pattern
+    Uses pub/sub event model to post events or command messages, where services involved in transaction read from
+    Services must be set as durable subscribers (sub does not need to be available at the time the message is posted)
+    In case of failure message brokers like Kafka need to send the message to dead letter queue
+    Pros
+        Service decoupling
+        Best data consistency time
+        Fast responsiveness
+    Cons
+        Very complex error handling
