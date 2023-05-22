@@ -1,0 +1,10 @@
+Primary business driver for breaking apps into smaller parts is time-to-market
+
+Key business architectural characteristics: time-to-market, agility, fault tolerance, scalability, deployability,
+testability, maintainability
+
+Everything is a tradeoff, if you think something is not -- you just haven't uncovered enough information
+
+Every workflow that architect needs to model has semantic coupling -- the inherent coupling that exists in the problem
+of the domain. Semantic coupling cannot be reduced. Any coupling on top is called implementation coupling
+

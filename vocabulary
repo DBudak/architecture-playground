@@ -1,7 +1,3 @@
-Primary business driver for breaking apps into smaller parts is time-to-market
-
-Key business architectural characteristics: time-to-market, agility, fault tolerance, scalability, deployability, testability, maintainability
-
 Component-based decomposition - migration to microservices
 
 COTS - commercial off the shelf, software bought and used "as is"
@@ -50,3 +46,9 @@ health checking and authentication. It is also applicable in last mile of distri
 mobile applications and browsers to backend services.
 
 Orthogonal coupling - two distinct purposes that must intersect to form a complete function
+
+Network Latency - 30-300ms time taken for packet transmission between services.
+
+Security Latency - 20 -400ms depending on the level of security, time taken to go through security mechanisms
+
+Data latency - multiple database calls

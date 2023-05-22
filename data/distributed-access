@@ -1,0 +1,51 @@
+Interservice Communcation Pattern
+    REST calls between services
+    Introduces Network and Security latency (see vocabulary)
+    Pros
+        Simplicity
+        No data volume issues
+    Cons
+        Network data and security latency
+        Scalability and throughput issues
+        No fault tolerance
+        Requires contracts between services
+
+Column Schema Replication Pattern
+    Columns are replicated across tables
+    Unless immediate ttransactional synchronization is required, asynchronous communication is preffered
+    Pros
+        Good data access performance
+        No scalability and throughput issues
+        No fault tolerance issues
+        No service dependencies
+    Cons
+        Data consistency issues
+        Data ownership issues
+        Data synchronization is required
+
+Replicated Cache Pattern
+    Duplication of data via in-memory cache
+    Works decent only for small <500MB data
+    Pros
+        Good data access performance
+        No scalability and throughput issues
+        Good fault tolerance
+        Data remains consistent
+        Data ownership is preserved
+    Cons
+        Cloud and containerized configs required
+        Not good with high volumes
+        Not good for high update rates
+        Initial service startup dependency
+
+Data Domain Pattern
+    Sharing data between services (aka 1 database for multiple services)
+    Pros
+        Good data access performance
+        No scalability and throughput issues
+        Good fault tolerance
+        Data remains consistent
+   Cons
+        Broad bounded context
+        Data ownership governance
+        Data access security

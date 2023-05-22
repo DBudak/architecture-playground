@@ -1,0 +1,7 @@
+Choreography (no central mediator) works for flows that need
+    responsiveness and scalability and don't have complex error scenarios or they are infrequent
+    Allows for high throughput
+    Can be difficult to implement
+
+Orchestration (central mediator) best suited for complex workflows that include boundary and error conditions
+    Doesn't provide as much scale as choreography
