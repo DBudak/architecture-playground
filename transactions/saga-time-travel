@@ -1,0 +1,21 @@
+Synchronous, eventual consistency, choreographed
+
+Each service accepts requests, performs action, forwards to the next actor.
+Is usually an implementation of Chain of Responsibilities design pattern (workflow with one way steps)
+Each domain deals with error conditions separately
+
+As any other choreography is not fit for complex workflows
+
+Works well for high throughput flows
+
+Is an easier alternative to Anthology Saga. If pattern provides adequate scalability, teams don't have to embrace
+more complex workflow
+
+Qualities
+    Communication               Synchronous
+    Consistency                 Eventual
+    Coordination                Choreographed
+    Coupling                    Medium
+    Complexity                  Low
+    Responsiveness/availability Medium
+    Scale/elasticity            High

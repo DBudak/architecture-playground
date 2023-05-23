@@ -1,0 +1,24 @@
+An Epic saga with choreography instead of orchestration
+
+No formal orchestrator exists. Initially called service becomes coordination point (sometimes called front controller)
+
+If an error occurs each service must have built-in compensating requests to send up the chain
+
+For complex workflows, the coordinator will become as complex as any orchestrator.
+
+Use for simple workflows, to eliminate race conditions
+
+Pros
+    Performance for happy path is faster than in Epic Saga
+Cons
+    Performance for non-happy path is slower than in Epic Saga
+    Higher complexity to Epic Saga
+
+Qualities
+    Communication               Synchronous
+    Consistency                 Atomic
+    Coordination                Choreographed
+    Coupling                    High
+    Complexity                  High
+    Responsiveness/availability Low
+    Scale/elasticity            Low

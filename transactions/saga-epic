@@ -1,0 +1,20 @@
+Also called "Orchestrated saga", is a traditional saga, as most people understand it
+
+The goal is to mimic the monolith service behavior
+
+Orchestrator manages workflow. In case of failure it issues compensating transactions.
+
+Pros
+    As close to atomicity as one can get as it exists in monolith services
+Cons
+    Negative impact on performance, scale, elasticity
+    Compensating transactions succumb to wide variety of failure modes and require manual intervention
+
+Qualities
+    Communication               Synchronous
+    Consistency                 Atomic
+    Coordination                Orchestrated
+    Coupling                    Very high
+    Complexity                  Low
+    Responsiveness/availability Low
+    Scale/elasticity            Very low

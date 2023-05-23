@@ -1,0 +1,16 @@
+Synchronous communication, eventual consistency, orchestration
+
+Orchestrator manages requests, response and error handling but is not responsible for managing transactions
+Orchestrator may manage compensating calls but without the requirement of occurring within an active transaction
+
+Compared to other patterns this one generally exhibits a favorable set of tradeoffs
+Consider if eventual consistency is an option
+
+Qualities
+    Communication               Synchronous
+    Consistency                 Eventual
+    Coordination                Orchestrated
+    Coupling                    High
+    Complexity                  Very Low
+    Responsiveness/availability Medium
+    Scale/elasticity            High

@@ -8,3 +8,6 @@ Everything is a tradeoff, if you think something is not -- you just haven't unco
 Every workflow that architect needs to model has semantic coupling -- the inherent coupling that exists in the problem
 of the domain. Semantic coupling cannot be reduced. Any coupling on top is called implementation coupling
 
+Architecture patterns are a recognition of commonality of a problem, not its solvability
+
+Reducing coupling increases scale

@@ -1,3 +1,9 @@
+The concept of a saga predates microservices, originally concerned with limiting the scope of db locks in early
+distributed architectures, concept cointed in 1987
+
+Saga pattern for microservices is a sequence of local transactions where each update publishes an event thus triggering
+the next update. If any of those updates fail, the saga issues a series of compensating updates to undo the changes
+
 Pattern Name - communication type - consistency - coordination - coupling
 
 Epic Saga -             synchronous -   atomic -    orchestrated -  very high
