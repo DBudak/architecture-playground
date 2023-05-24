@@ -1,0 +1,16 @@
+Exact opposite of Epic saga: async, eventual, choreographed.
+
+The least coupled pattern
+
+Services maintain their own transactional integrity
+
+Doesn't work for complex workflow, stamp coupling may be used to fix that
+
+Qualities
+    Communication               Asynchronous
+    Consistency                 Eventual
+    Coordination                Choreographed
+    Coupling                    Very low
+    Complexity                  High
+    Responsiveness/availability High
+    Scale/elasticity            Very High

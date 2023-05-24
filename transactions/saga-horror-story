@@ -1,0 +1,15 @@
+Worst possible combination
+Asynchronous communication, atomic consistency, choreographed coordination
+
+Combines the most stringent coupling for consistency with the loosest coupling styles: asynchronous choreography
+
+Is usually a result of architect attempting to improve performance in a saga by introducing asynchronous communication
+
+Qualities
+    Communication               Asynchronous
+    Consistency                 Atomic
+    Coordination                Choreographed
+    Coupling                    Medium
+    Complexity                  Very high
+    Responsiveness/availability Low
+    Scale/elasticity            Medium

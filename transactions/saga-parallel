@@ -1,0 +1,14 @@
+Async, Eventual, Orchestrated
+
+Is an easier to implement variant to Epic Saga
+
+Preferred to Epic if above tradeoffs can be made
+
+Qualities
+    Communication               Asynchronous
+    Consistency                 Eventual
+    Coordination                Orchestrated
+    Coupling                    Low
+    Complexity                  Low
+    Responsiveness/availability High
+    Scale/elasticity            High

@@ -1,0 +1,14 @@
+Atomic consistency, asynchronous communication, orchestrated coordination
+
+adding asynchrocity to orchestrated workflows adds asynchronous transactional state: race conditions, deadlocks etc.
+
+Isn't a very good pattern
+
+Qualities
+    Communication               Asynchronous
+    Consistency                 Atomic
+    Coordination                Orchestrated
+    Coupling                    High
+    Complexity                  High
+    Responsiveness/availability Low
+    Scale/elasticity            Low

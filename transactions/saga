@@ -4,6 +4,18 @@ distributed architectures, concept cointed in 1987
 Saga pattern for microservices is a sequence of local transactions where each update publishes an event thus triggering
 the next update. If any of those updates fail, the saga issues a series of compensating updates to undo the changes
 
+State management and eventual consistency leverage finite state machines aka saga state machine
+
+Saga state machine - pattern that describes all possible paths that can exist within a workflow executed in a
+distributed architecture
+
+Documented as
+
+Initiating State    Transition state    Transaction action
+START               CREATED             Assign ticket to expert
+CREATED             ASSIGNED            Route ticked to expert
+ASSIGNED            ACCEPTED            Expert fixes the problem
+
 Pattern Name          Communication type    Consistency   Coordination      Coupling
 
 Epic Saga             synchronous           atomic        orchestrated      very high
