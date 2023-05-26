@@ -9,3 +9,5 @@ Architecture sinkhole - too many pass-through requests in a layered monolith
 Cyclic dependency - tight coupling of components that also can reference each other
 
 Elephant Migration Antipattern - starting microservice migration small without overall vision. Results in distributed monolith
+
+Stamp-coupling - occurs when modules share a composite data structure and use only parts of it, possibly different parts

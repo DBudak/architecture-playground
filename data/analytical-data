@@ -1,0 +1,45 @@
+Analytical and operation data needs are different
+
+Data Warehouse
+    Data is extracted from many sources into one massive storage (warehouse)
+    Data is transformed into a single schema
+    Regular sync mechanism is present
+    Analysis is done against warehouse data
+    Has SQL-ish interfaces
+Pros
+    Centralized consolidation of data
+    Isolated analysis silo
+Cons
+    Extreme partitioning of domain knowledge
+    Integration brittleness
+    Complexity
+    Limited functionality for intended purposes
+
+
+Data Lake
+    Data is extracted from many sources into one massive storage (warehouse)
+    Data is not transformed, or transformation is minimal
+    Regular sync mechanism is present
+    Analysis is done against lake data
+Pros
+    Less structured than Data Warehouse
+    Less up-front transformation
+    Better suited to distributed architectures
+Cons
+    Sometimes difficult to understand relationships
+    Requires ad hoc transformations
+
+
+Data Mesh
+    Data is owned by a domain
+    Data is a product
+    Self-serve data platform
+    Computational federated governance
+Pros
+    Highly suitable for microservices
+    Follows modern principles and ilities
+    Allows excellent decoupling between analytical and operational data
+    Carefully formed contracts allow loosely coupled evolution
+Cons
+    Requires contract coordination
+    Requires asynchronous communication and eventual consistency

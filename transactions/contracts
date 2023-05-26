@@ -1,0 +1,11 @@
+semantics - what information to pass
+implementation - how to pass the information
+
+Strict vs loose contracts
+
+Advantage of strict                                         Disadvantage of strict
+
+Guaranteed contract fidelity                                Tight coupling
+Versioned(allows precision)                                 Versioned(increases complexity)
+Easier to verify at build time
+Better documentation

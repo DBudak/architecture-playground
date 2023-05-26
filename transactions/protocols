@@ -1,0 +1,38 @@
+SOAP - Simple Object Access Protocol
+
+Is a message protocol that enables the distributed elements of an application to communicate. SOAP can be carried over
+a variety of standard protocols, including the web-related Hypertext Transfer Protocol (HTTP).
+
+SOAP is a lightweight protocol used to create web APIs, usually with Extensible Markup Language (XML). It supports a
+wide range of communication protocols across the internet, HTTP, Simple Mail Transfer Protocol (SMTP) and
+Transmission Control Protocol.
+
+The SOAP Envelope encapsulates all the data in a message and identifies the XML document as a SOAP message.
+The Header element contains additional information about the SOAP message. This information could be authentication
+credentials, for example, which are used by the calling application.
+The Body element includes the details of the actual message that need to be sent from the web service to the calling
+application. This data includes call and response information.
+
+
+REST - Representational State Transfer
+
+Is a software architecture style for building scalable web services. REST services typically communicate via HTTP and
+are built using XML and JSON.
+
+REST is far more common of the two types of service, as it is more flexible (permitting more data formats, while SOAP
+only allows for XML) and uses standard HTTP. RESTful reads can also be cached, while SOAP reads cannot.
+
+
+gRPC - gRPC Remote Procedure Calls
+
+Is a cross-platform open source high performance remote procedure call (RPC) framework.
+
+Strict protocols                              Loose protocols
+
+XML Schema              GraphQL                 Value-driven contracts
+JSON Schema             REST                    Simple Json
+Object                                          KVP arrays (maps)
+RPC(including gRPC)
+
+GraphQL is used by distributed architectures to provide read-only aggregated data.
+
