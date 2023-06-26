@@ -1,0 +1,11 @@
+Evans:
+Aggregate is a cluster of associated objects that we treat as a unit for purpose of data changes.
+Each Aggregate has a root and a boundary
+Boundary defines what is inside the aggregate
+Root is a single entity contained in the aggregate. Root is the only memeber of Aggregate that outside objects are allowed to hold a reference to
+Entities other than the root can have local identities, but it is only distinguishable within the aggregate.
+Any object internal to the aggregate can only be accessed by traversal from the Root.
+
+To make an aggregate:
+    Cluster Entities and Value objects together. Form Boundary. Pick a Root Entity
+    Ensure Aggregate creation methods are atomic and enforces all variances of the Aggregate

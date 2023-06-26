@@ -1,0 +1,3 @@
+Evans:
+    Factory is responsible for making new Aggregates
+    Ensure Aggregate creation methods are atomic and enforces all variances of the Aggregate

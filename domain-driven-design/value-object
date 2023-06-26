@@ -1,0 +1,4 @@
+Evans:
+    Value Object is an immutable identity-less Entity
+    Can be passed around and used by multiple Entitites at the same time because it does not have a unique identity
+    Specification is a type of a Value Object that contains boolean logic

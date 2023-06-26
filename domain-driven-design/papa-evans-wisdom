@@ -1,0 +1,9 @@
+Use code in design
+Make all parties involved in the project
+Be ready to drop things as you go
+Collaboration is the key to successful outcome
+Represent business rule as a separate code aka Policy
+
+Give an entity an id only if you care about its identity
+If you don't - its a value object, make it immutable
+Start modeling from value objects and increase complexity as you go (this is not Evans, this is me)

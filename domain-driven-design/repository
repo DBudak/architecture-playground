@@ -1,0 +1,4 @@
+Evans:
+A Repository represents all objects of a certain type.
+It is like a collection of entities, where clients can query from
+Is basically an abstraction over raw SQL
